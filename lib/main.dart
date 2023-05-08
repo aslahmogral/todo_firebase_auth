@@ -1,14 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_mtest/Todo_screen.dart';
+// import 'package:todo_mtest/screens/Todo_screen.dart';
 import 'package:todo_mtest/provider/todo_provider.dart';
+import 'package:todo_mtest/screens/Todo_screen.dart';
+import 'package:todo_mtest/screens/home_screen.dart';
+import 'package:todo_mtest/screens/splash_screen.dart';
 
 import 'services/firebase_options.dart';
 
-// void main() {
-//   runApp(const MyApp());
-// }
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: TodoScreen()),
+          home: SplashScreen()),
     );
   }
 }
